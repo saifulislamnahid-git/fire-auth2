@@ -1,20 +1,22 @@
-
 import React from 'react';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+
 
 const Header = () => {
     return (
         <div>
-            <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">Fire Authentication</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+            <Container>
+                <Navbar className="mt-2" bg="light" expand="lg">
+                    <Navbar.Brand href="home">Fire Authentication</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ml-auto">
+                            <Nav.Link href="login">Log In</Nav.Link>
+                            <Nav.Link href="registration">Registration</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </Container>
         </div>
     );
 };
